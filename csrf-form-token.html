@@ -5,8 +5,17 @@
         <input type="hidden" name="userId" value="1a6d40a6607d9267269433a744c7b1182ebb294f">
 	<input type="hidden" name="csrfToken" value="51022218993380424903143371145453952077">
     </form>
+<!--
     <script>
 	document.getElementById('csrfForm').submit();
+    </script>
+-->
+    <h1>Your Cookies:</h1>
+    <p id="cookies"></p>
+
+    <script>
+        // Get cookies and display them on the page
+        document.getElementById('cookies').textContent = document.cookie;
     </script>
 </body>
 </html>
